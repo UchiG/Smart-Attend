@@ -1,0 +1,127 @@
+﻿@page
+@model SmartAttendWeb.Pages.Landing1Model
+@{
+
+    Layout = null; // No layout
+
+}
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Content</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+    .center-content {
+        display: flex;
+        margin-top: 150px;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .big-text {
+        font-size: 48px; /* Adjust the font size as needed */
+        font-weight: bold;
+    }
+
+    .black-links a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .landing-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 20px;
+        color: #000; /* Change text color to black */
+    }
+
+    .try-now-button {
+        background-color: #0074b6; /* Dark blue */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+</style>
+</head>
+
+
+<body>
+    <img src="~/resources/topWavy.svg" alt="Calendar" id="calendar" height="400" />
+
+    <div class="black-links mt-3" style="color: #000000; text-decoration: none;">
+        <a href="/Landing1" style="color: #000000; text-decoration: none;">Home</a> | <a href="/ContactInfo" style="color: #000000; text-decoration: none;">Contact Us</a> | <a href="/LogIn" style="color: #000000; text-decoration: none;">Login</a>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="landing-content">
+                    <p>Smart Attend is an indispensable tool designed for</p>
+                    <p>educational institutions to streamline and</p>
+                    <p>enhance student attendance management</p>
+                    <button class="try-now-button text-white"><a href="/Experience" style="color: #ffffff; text-decoration: none;">Try now!</a></button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="~/resources/calendar.svg" alt="Calendar" id="calendar" height="400" />
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="~/resources/classTeacher.svg" alt="Calendar" id="calendar" height="400" />
+            </div>
+            <div class="col-md-6 mt-5">
+                <h1>Simplified attendance taking</h1>
+                <p>With user-friendly features, it simplifies attendance,</p>
+                <p>
+                    tracking, automates reporting, and offers real-time
+                </p>
+                <p>
+                    insights. Empower educators and administrators with
+                </p>
+                <p>
+                    efficient attendance management using Smart Attend.
+                </p>
+                <p>Boost productivity and ensure accountability effortlessly</p>
+            </div>
+        </div>
+    </div>
+
+    <img src="~/resources/bottomWave1.svg" alt="Calendar" id="calendar" height="400" />
+    <img src="~/resources/blueTop.svg" alt="Calendar" id="calendar" height="400" />
+
+
+    <div class="container center-content">
+        <h1 class="big-text">Experience now</h1>
+        <a href="/SignUp"><button class="btn btn-primary">Sign up</button></a>
+        <div class="black-links mt-3">
+            <a href="/Landing1">Home</a> | <a href="ContactInfo">Contact Us</a> | <a href="/LogIn">Login</a>
+        </div>
+    </div>
+
+    <img src="~/resources/bottomWave1.svg" alt="Calendar" id="calendar" height="400" />
+
+
+    <!-- Include Bootstrap and Font Awesome libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+

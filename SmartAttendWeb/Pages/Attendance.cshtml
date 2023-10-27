@@ -1,0 +1,108 @@
+﻿@page
+@model SmartAttendWeb.Pages.AttendanceModel
+@{
+
+    Layout = "_AttendLecturerLayout"; // Set the layout to a different layout file
+
+}
+
+<h1 style="color: blue;">Attendance</h1>
+
+<!-- Second table (new table with additional fields and dummy data) -->
+<table class="table">
+    <thead>
+        <tr>
+            <th><b>Name</b></th>
+            <th><b>Email</b></th>
+            <th><b>Student ID</b></th>
+            <th><b>Program</b></th>
+            <th><b>Year</b></th>
+            <th><b>Date</b></th>
+            <th><b>Status</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>John Doe</td>
+            <td>johndoe@example.com</td>
+            <td>1234567890</td>
+            <td>BSc Computer Sci</td>
+            <td>2</td>
+            <td>2023-01-15</td>
+            <td><span class="badge badge-success text-black bg-success">Present</span></td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>janesmith@example.com</td>
+            <td>0987654321</td>
+            <td>BSc Physics</td>
+            <td>3</td>
+            <td>2023-01-16</td>
+            <td><span class="badge badge-success text-black bg-success">Present</span></td>
+        </tr>
+        <!-- Add more rows here -->
+        <tr>
+            <td>Alice Johnson</td>
+            <td>alice@example.com</td>
+            <td>9876543210</td>
+            <td>BSc Biology</td>
+            <td>1</td>
+            <td>2023-01-17</td>
+            <td><span class="badge badge-danger text-black bg-danger">Absent</span></td>
+        </tr>
+        <tr>
+            <td>Bob Wilson</td>
+            <td>bob@example.com</td>
+            <td>5555555555</td>
+            <td>BSc Computer Sci</td>
+            <td>2</td>
+            <td>2023-01-18</td>
+            <td><span class="badge badge-success text-black bg-success">Present</span></td>
+        </tr>
+        <tr>
+            <td>Eve Brown</td>
+            <td>eve@example.com</td>
+            <td>1111111111</td>
+            <td>BSc Physics</td>
+            <td>3</td>
+            <td>2023-01-19</td>
+            <td><span class="badge badge-danger text-black bg-danger">Absent</span></td>
+        </tr>
+        <tr>
+            <td>Charlie Davis</td>
+            <td>charlie@example.com</td>
+            <td>7777777777</td>
+            <td>BSc Biology</td>
+            <td>1</td>
+            <td>2023-01-20</td>
+            <td><span class="badge badge-success text-black bg-success">Present</span></td>
+        </tr>
+        <tr>
+            <td>Lisa White</td>
+            <td>lisa@example.com</td>
+            <td>9999999999</td>
+            <td>BSc Computer Sci</td>
+            <td>2</td>
+            <td>2023-01-21</td>
+            <td><span class="badge badge-danger text-black bg-danger">Absent</span></td>
+        </tr>
+        <tr>
+            <td>Sam Black</td>
+            <td>sam@example.com</td>
+            <td>8888888888</td>
+            <td>BSc Physics</td>
+            <td>3</td>
+            <td>2023-01-22</td>
+            <td><span class="badge badge-success text-black bg-success">Present</span></td>
+        </tr>
+        <tr>
+            <td>Mia Green</td>
+            <td>mia@example.com</td>
+            <td>6666666666</td>
+            <td>BSc Biology</td>
+            <td>1</td>
+            <td>2023-01-23</td>
+            <td><span class="badge badge-danger text-black bg-danger">Absent</span></td>
+        </tr>
+    </tbody>
+</table>

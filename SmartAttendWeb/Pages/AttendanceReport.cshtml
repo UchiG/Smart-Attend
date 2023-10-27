@@ -1,0 +1,27 @@
+﻿@page
+@model SmartAttendWeb.Pages.AttendanceModel
+@{
+    Layout = "_AttendLecturerLayout"; // Set the layout to a different layout file
+}
+
+<h1 style="color: blue;">Attendance</h1>
+
+<form>
+    <div class="form-group">
+        <label for="courseCode">Course Code</label>
+        <input type="text" class="form-control" id="courseCode">
+    </div>
+    <div class="form-group">
+        <label for="startDate">Start Date</label>
+        <input type="date" class="form-control" id="startDate">
+    </div>
+    <div class="form-group">
+        <label for="endDate">End Date</label>
+        <input type="date" class="form-control" id="endDate">
+    </div>
+    <button class="btn btn-primary btn-block mt-3">Create Report</button>
+    <div class="mt-4">
+        <p><strong>Total students present:</strong></p>
+        <p><strong>Total students absent:</strong></p>
+    </div>
+</form>

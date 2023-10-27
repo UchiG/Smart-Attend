@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SmartAttendWeb</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="c:\users\uchir\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\css\bootstrap.min.css"
+          rel="stylesheet" />
+    <script src="c:\users\uchir\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.min.js"></script>
+    <script src="c:\users\uchir\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+
+    <link rel="stylesheet" href="../styles/addModules.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <style>
+        .nav-link {
+            color: black !important; /* Use !important to override other styles */
+        }
+    </style>
+
+    <img src="~/resources/blueTop.svg" alt="Blue Wave" id="blue-wave" />
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+@*                         <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/DashboardSA">Dashboard</a>
+                        </li> *@
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/DashboardSA">Dashboard</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/AssignStudents">Assign Students</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/AssignLecturers">Assign Lecturers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/AddModules">Add Modules</a>
+                        </li>
+                       @*  <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Landing1">Landing</a>
+                        </li> *@
+                        @* <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Experience">Experience</a>
+                        </li> *@
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/LogIn"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/SignUp"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/MyAttendance"></a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/AttendanceReport"></a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/AttendanceCode"></a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/ContactInfo"></a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/DashboardLecturer"></a>
+                        </li>
+
+                         <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/DashboardStudent"></a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Landing2"></a>
+                        </li>
+                         
+                <div class="mb-1">
+                    <!-- Bigger Logout Button with Icon -->
+                    <button class="btn btn-light btn-lg">
+                                <a href="/Landing1"><i class="fas fa-sign-out-alt"></i></a>
+                    </button>
+                </div>
+                    </ul>
+                </div>
+            </nav>
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">@RenderBody()</main>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <img src="~/resources/bottomWave1.svg" alt="bottom Wave" id="bottom-wave" />
+
+</body>
+</html>

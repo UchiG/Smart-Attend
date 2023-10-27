@@ -1,0 +1,92 @@
+﻿@page
+@model SmartAttendWeb.Pages.DashboardSAModel
+@{
+
+    Layout = "_AttendSALayout"; // Set the layout to a different layout file
+
+}
+
+<style>
+    .blue-heading {
+        color: blue;
+    }
+
+    .grey-rectangle {
+        background-color: grey;
+        text-align: center;
+        padding: 10px;
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .blue-rectangles {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blue-rectangle {
+        padding: 20px;
+        text-align: left;
+        color: white;
+        position: relative;
+    }
+
+    .light-blue {
+        background-color: #00bfff;
+    }
+
+    .medium-blue {
+        background-color: #0074b6;
+    }
+
+    .dark-blue {
+        background-color: #001f3f;
+    }
+
+    .external-link-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px;
+    }
+
+        .external-link-icon a {
+            color: white;
+            text-decoration: none;
+        }
+</style>
+
+<div class="container">
+    <h1 class="blue-heading">System Admin Dashboard</h1>
+
+    <div class="row">
+        <div class="col-md-3 grey-rectangle">
+            <p>Students Enrolled</p>
+            <p>15</p>
+        </div>
+        <div class="col-md-3 grey-rectangle">
+            <p>Lecturers Enrolled</p>
+            <p>02</p>
+        </div>
+        <div class="col-md-3 grey-rectangle">
+            <p>Modules Added</p>
+            <p>01</p>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-12 blue-rectangle light-blue rounded">
+            <p class="text-left">Assign Lecturers <i class="fas fa-external-link-alt external-link-icon"><a href="/AssignLecturers"></a></i></p>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-12 blue-rectangle medium-blue rounded">
+            <p class="text-left">Assign Students <i class="fas fa-external-link-alt external-link-icon"><a href="/AssignStudents"></a></i></p>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-12 blue-rectangle dark-blue rounded">
+            <p class="text-left">Add Modules <i class="fas fa-external-link-alt external-link-icon"><a href="/AddModules"></a></i></p>
+        </div>
+    </div>
+</div>

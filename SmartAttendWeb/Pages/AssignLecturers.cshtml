@@ -1,0 +1,75 @@
+﻿@page
+@model SmartAttendWeb.Pages.AssignLecturersModel
+@{
+
+    Layout = "_AttendSALayout"; // Set the layout to a different layout file
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your existing head content here -->
+</head>
+<body>
+    <div class="">Home / Add Students</div>
+    <div class="container-fluid">
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <h1 class="mt-4">Lecturer</h1>
+
+            <!-- Your form with modified fields -->
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class "form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="lecturerID">Lecturer ID</label>
+                            <input type="text" class="form-control" id="lecturerID" placeholder="Lecturer ID">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="moduleCode">Module Code</label>
+                            <input type="text" class="form-control" id="moduleCode" placeholder="Module Code">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-primary action-button delete-button">Add</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-secondary action-button update-button">Update</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-danger action-button add-button">Delete</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <style>
+        .form-group {
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

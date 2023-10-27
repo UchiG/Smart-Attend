@@ -1,0 +1,96 @@
+﻿@page
+@model SmartAttendWeb.Pages.DashboardLecturerModel
+@{
+
+    Layout = "_AttendLecturerLayout"; // Set the layout to a different layout file
+
+}
+
+<style>
+    .green-rectangle {
+        background-color: lightgreen;
+    }
+
+    .red-rectangle {
+        background-color: lightcoral;
+    }
+
+    .yellow-rectangle {
+        background-color: lightyellow;
+    }
+
+    .attendance-div {
+        background-color: #0074b6; /* Blue background color */
+        border-radius: 10px; /* Rounded corners */
+        color: white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .button-green {
+        background-color: #28a745; /* Green button color */
+        color: white;
+        border: none;
+        border-radius: 10px; /* Rounded corners */
+    }
+
+    .button-red {
+        background-color: #dc3545; /* Red button color */
+        color: white;
+        border: none;
+        border-radius: 10px; /* Rounded corners */
+    }
+</style>
+
+<h1 style="color: blue;">Lecturer Dashboard</h1>
+
+<div class="row">
+    <div class="col-md-3 green-rectangle">
+        <p>Students Present</p>
+        <p>15</p>
+    </div>
+    <div class="col-md-3 red-rectangle">
+        <p>Lecturers Absent</p>
+        <p>02</p>
+    </div>
+    <div class="col-md-3 yellow-rectangle">
+        <p>Number of students</p>
+        <p>17</p>
+    </div>
+</div>
+
+<div class="attendance-div">
+    <h2>Attendance <i class="fas fa-external-link-alt"></i></h2>
+    <div class="row">
+        <div class="col-md-4">
+            <p>Name: John Doe</p>
+            <p>Student Number: 12345</p>
+            <button class="button-green">Present</button>
+        </div>
+        <div class="col-md-4">
+            <p>Name: Jane Smith</p>
+            <p>Student Number: 67890</p>
+            <button class="button-red">Absent</button>
+        </div>
+        <div class="col-md-4">
+            <p>Name: Alice Johnson</p>
+            <p>Student Number: 54321</p>
+            <button class="button-green">Present</button>
+        </div>
+        <div class="col-md-4">
+            <p>Name: Bob Brown</p>
+            <p>Student Number: 98765</p>
+            <button class="button-red">Absent</button>
+        </div>
+        <div class="col-md-4">
+            <p>Name: Carol Wilson</p>
+            <p>Student Number: 11111</p>
+            <button class="button-green">Present</button>
+        </div>
+        <div class="col-md-4">
+            <p>Name: David Lee</p>
+            <p>Student Number: 99999</p>
+            <button class="button-red">Absent</button>
+        </div>
+    </div>
+</div>

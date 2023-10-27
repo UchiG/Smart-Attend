@@ -1,0 +1,102 @@
+﻿@page
+@model SmartAttendWeb.Pages.AssignStudentsModel
+@{
+
+    Layout = "_AttendSALayout"; // Set the layout to a different layout file
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="../styles/addStudents.css" />
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="content-container">
+        <div class="header">
+            <div class="site-title">SmartAttend</div>
+        </div>
+        <div class="menu">
+            <div class="breadcrumb">
+                <div class="breadcrumb-text">Home / Add Students</div>
+            </div>
+            <div class="user-info">
+                <div class="user-name">System Admin</div>
+            </div>
+        </div>
+
+        <!-- Add Students Section -->
+        <div class="add-students-section">
+            <h1 class="mt-4">Student Details</h1>
+                <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                    <!-- Your form with modified fields -->
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class "form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lecturerID">Student ID number</label>
+                                    <input type="text" class="form-control" id="lecturerID" placeholder="Lecturer ID">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="moduleCode">Email</label>
+                                    <input type="text" class="form-control" id="moduleCode" placeholder="Module Code">
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="lecturerID">Degree program</label>
+                                <input type="text" class="form-control" id="lecturerID" placeholder="Lecturer ID">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="moduleCode">Year level</label>
+                                <input type="text" class="form-control" id="moduleCode" placeholder="Module Code">
+                            </div>
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-primary action-button delete-button">Add</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-secondary action-button update-button">Update</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-danger action-button add-button">Delete</button>
+                            </div>
+                        </div>
+                    </form>
+                </main>
+        </div>
+
+        <!-- Navigation and other content here -->
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

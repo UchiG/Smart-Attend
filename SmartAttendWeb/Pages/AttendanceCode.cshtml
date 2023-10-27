@@ -1,0 +1,39 @@
+﻿@page
+@model SmartAttendWeb.Pages.AttendanceCodeModel
+@{
+
+    Layout = "_AttendStudentLayout"; // Set the layout to a different layout file
+
+}
+
+<h1 style="color: blue;">Attendance Code</h1>
+
+<div class="form-group col-md-6">
+    <label for="module">Module</label>
+    <select class="form-control" id="module">
+        <option value="select">Please select</option>
+        <option value="COMP 201">COMP 201</option>
+        <option value="COMP 211">COMP 211</option>
+        <option value="COMP 221">COMP 221</option>
+        <option value="COMP 231">COMP 231</option>
+        <option value="COMP 311">COMP 311</option>
+        <option value="COMP 331">COMP 331</option>
+        <option value="COMP 342">COMP 342</option>
+    </select>
+</div>
+
+<div class="form-row d-flex p-5">
+    <div class="col-md-6 form-group">
+        <label for="lecturePasscode">Enter today's lecture Passcode:</label>
+        <input type="text" class="form-control" id="lecturePasscode">
+    </div>
+    <div class="col-md-6 form-group">
+        <label for="passcodeDuration">Enter Passcode Duration:</label>
+        <input type="text" class="form-control" id="passcodeDuration">
+    </div>
+</div>
+
+<div class="text-center">
+    <!-- Horizontally center the button -->
+    <button class="btn btn-primary">SUBMIT</button> <!-- Use Bootstrap button styles -->
+</div>
